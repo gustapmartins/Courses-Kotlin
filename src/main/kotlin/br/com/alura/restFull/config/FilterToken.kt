@@ -25,12 +25,12 @@ class FilterToken(
         var authorizationHeader = request.getHeader("Authorization")
 
         if(authorizationHeader != null) {
-            token = authorizationHeader.replace("Bearer", "")
+            token = authorizationHeader.split(" ")[1]
             val subject = this.service.getSubject(token)
             val usuario = this.repository.findByEmail(subject)
             var authentication = UsernamePasswordAuthenticationToken(usuario, null, usuario?.authorities)
 
-            SecurityContextHolder.getContext().setAuthentication(authentication)
+            SecurityContextHolder.getContext().authentication = authentication
         }
 
         filterChain.doFilter(request, response)

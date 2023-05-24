@@ -19,10 +19,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableMethodSecurity
 class SecurityConfig(
-     private val filter: FilterToken,
-
+    private val filter: FilterToken
 ) {
-
     @Bean
     fun SecurityFilterChain(http: HttpSecurity): SecurityFilterChain {
         return http
@@ -36,6 +34,7 @@ class SecurityConfig(
             .anyRequest()
             .authenticated()
             .and()
+            .addFilterBefore(filter, UsernamePasswordAuthenticationFilter::class.java)
             .build()
     }
 

@@ -29,16 +29,16 @@ class UserService(
     fun gerarToken(user: Usuario): String {
         return JWT
             .create()
-            .withIssuer("Topicos")
+            .withIssuer("topicos")
             .withSubject(user.username)
             .withClaim("id", user.id)
-            .withExpiresAt(LocalDateTime.now().plusSeconds(30).toInstant(ZoneOffset.of("-03:00")))
+            .withExpiresAt(LocalDateTime.now().plusMinutes(10).toInstant(ZoneOffset.of("-03:00")))
             .sign(Algorithm.HMAC256("secreta"))
     }
 
     fun getSubject(token: String): String {
         return JWT.require(Algorithm.HMAC256("secreta"))
-            .withIssuer("Topcios")
+            .withIssuer("topicos")
             .build().verify(token).subject
     }
 
