@@ -4,11 +4,9 @@ import br.com.alura.restFull.DTO.Autor.AutorDTO
 import br.com.alura.restFull.exception.NotFoundException
 import br.com.alura.restFull.mapper.AutorViewMapper
 import br.com.alura.restFull.model.Autor
-import br.com.alura.restFull.model.Topico
 import br.com.alura.restFull.repository.AutorRepository
 import org.springframework.stereotype.Service
 import java.util.stream.Collectors
-import kotlin.collections.ArrayList
 
 @Service
 class AutorService(
