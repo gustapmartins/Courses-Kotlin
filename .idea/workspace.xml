@@ -12,11 +12,7 @@
       <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/TopicoViewTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/updateDTOTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/service/TopicoServiceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull" beforeDir="false" afterPath="$PROJECT_DIR$/restFull" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restFull/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/Topico/TopicoView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/Topico/TopicoView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/RestFullApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/RestFullApplication.kt" afterDir="false" />
