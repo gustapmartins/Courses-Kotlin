@@ -14,7 +14,7 @@ import java.util.*
 
 @RestController
 @RequestMapping("/topicos")
-class TipoController(private val service: TopicoService) {
+class TopicoController(private val service: TopicoService) {
 
     @GetMapping
     fun listar(@RequestParam("page") page: Int, @RequestParam("pageSize") pageSize: Int): List<TopicoView> {
