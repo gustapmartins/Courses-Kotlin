@@ -26,7 +26,8 @@ class AutorService(
     }
 
     fun listAutorId(id: Long): Autor {
-        return repository.findById(id).get()
+        val AutorId = repository.findById(id).get()
+        return AutorId
     }
 
     fun createList(create: AutorDTO): AutorDTO {
@@ -47,8 +48,9 @@ class AutorService(
         return atualizado
     }
 
-    fun deleteId(id: Long): Autor{
+    fun deleteId(id: Long): Autor {
+        val autorId = repository.findById(id).orElseThrow{ NotFoundException(notFoundMessage) }
         repository.deleteById(id)
-        return repository.findById(id).get()
+        return autorId
     }
 }

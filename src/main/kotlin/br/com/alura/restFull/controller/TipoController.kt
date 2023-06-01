@@ -47,10 +47,4 @@ class TipoController(private val service: TopicoService) {
     fun deleteList(@PathVariable id: Long): ResponseEntity<TopicoView> {
         return ResponseEntity.ok(service.deleteList(id))
     }
-
-
-    @GetMapping("/relatorio")
-    fun relatorio(): List<TopicoPorCategoriaDTO> {
-        return service.relatorio()
-    }
 }

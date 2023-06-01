@@ -49,7 +49,7 @@ class TopicoService(
         var atualizado = topico.copy(
             titulo = update.titulo ?: topico.titulo,
             mensagem = update.mensagem ?: topico.mensagem,
-            dataAlteracao = topico.dataAlteracao
+            dataAlteracao = LocalDate.now()
         )
 
         repository.save(atualizado)

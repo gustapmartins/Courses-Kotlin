@@ -7,8 +7,6 @@ import br.com.alura.restFull.exception.NotFoundException
 import br.com.alura.restFull.mapper.CursoViewMapper
 import br.com.alura.restFull.model.Curso
 import br.com.alura.restFull.repository.CursoRepository
-import org.springframework.cache.annotation.CacheEvict
-import org.springframework.cache.annotation.Cacheable
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
@@ -20,7 +18,6 @@ class CursoService(
 ) {
     private val notFoundMessage: String = "Topico não encontrado!"
 
-    @Cacheable("cursos")
     fun listCursos(
         nomeCurso: String?,
         paginacao: Pageable
@@ -39,7 +36,6 @@ class CursoService(
         return repository.findById(id).get()
     }
 
-    @CacheEvict(cacheNames = ["cursos"], allEntries = true)
     fun createList(create: CursoDTO): CursoDTO {
         val cursos = Curso(
             id = create.id,
@@ -50,7 +46,6 @@ class CursoService(
         return create
     }
 
-    @CacheEvict(cacheNames = ["cursos"], allEntries = true)
     fun updateList(id: Long, update: CursoUpdateDTO): CursoView {
         val curso = repository.findById(id).orElseThrow { NotFoundException(notFoundMessage) }
         var atualizado = curso.copy(
@@ -62,7 +57,6 @@ class CursoService(
         return CursoViewMapper.mapUpdate(update, atualizado)
     }
 
-    @CacheEvict(cacheNames = ["cursos"], allEntries = true)
     fun deleteId(id: Long): CursoView {
         val curso = repository.findById(id).orElseThrow { NotFoundException(notFoundMessage) }
         repository.deleteById(id)

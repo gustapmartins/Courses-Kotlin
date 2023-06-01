@@ -34,7 +34,7 @@ class CursoController(private val service: CursoService) {
     }
 
     @PatchMapping("/{id}")
-    fun update(@PathVariable id: Long, @RequestBody  update: CursoUpdateDTO): CursoView {
+    fun update(@PathVariable id: Long, @RequestBody update: CursoUpdateDTO): CursoView {
         return service.updateList(id, update)
     }
 

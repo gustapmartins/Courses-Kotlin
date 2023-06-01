@@ -1,10 +1,11 @@
 spring:
-  datasourse:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/cursos
-    username: root
-    password: 252525
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:cursos
+    username: sa
+    password:
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
         show_sql: true
@@ -28,7 +29,7 @@ spring:
           auth: true
           starttls:
             enable: true
+thymeleaf:
+  mode: HTML
 jwt:
   secret: secreto
-
-
