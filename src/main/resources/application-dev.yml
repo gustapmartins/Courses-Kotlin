@@ -1,15 +1,16 @@
 spring:
   datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:cursos
-    username: sa
-    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/cursos
+    username: root
+    password: root
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     properties:
       hibernate:
         show_sql: true
         format_sql: true
+        ddl-auto: create
   cache:
     type: redis
   redis:
@@ -29,7 +30,7 @@ spring:
           auth: true
           starttls:
             enable: true
-thymeleaf:
-  mode: HTML
+  thymeleaf:
+    mode: HTML
 jwt:
   secret: secreto
