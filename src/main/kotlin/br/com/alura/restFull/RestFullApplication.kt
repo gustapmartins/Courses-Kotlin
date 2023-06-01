@@ -9,5 +9,5 @@ import org.springframework.cache.annotation.EnableCaching
 class RestFullApplication
 
 fun main(args: Array<String>) {
-	runApplication<RestFullApplication>(*args)
+    runApplication<RestFullApplication>(*args)
 }

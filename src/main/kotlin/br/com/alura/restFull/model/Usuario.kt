@@ -15,7 +15,7 @@ data class Usuario (
     val id: Long? = null,
     val nome: String,
     val email: String,
-    val senha: String,
+    var senha: String,
 ): UserDetails {
     override fun getAuthorities(): List<SimpleGrantedAuthority> {
         return listOf(SimpleGrantedAuthority("ROLE_USER"))

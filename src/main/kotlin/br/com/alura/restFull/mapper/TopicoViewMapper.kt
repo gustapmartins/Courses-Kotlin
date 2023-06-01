@@ -4,6 +4,7 @@ import br.com.alura.restFull.DTO.Topico.TopicoView
 import br.com.alura.restFull.DTO.Topico.UpdateDTO
 import br.com.alura.restFull.model.Topico
 import org.springframework.stereotype.Component
+import java.time.LocalDate
 
 @Component
 class TopicoViewMapper: Mapper<Topico, TopicoView> {
@@ -11,7 +12,8 @@ class TopicoViewMapper: Mapper<Topico, TopicoView> {
         return TopicoView(
             id = t.id,
             titulo = t.titulo,
-            mensagem = t.mensagem
+            mensagem = t.mensagem,
+            dataAlteracao = t.dataAlteracao
         )
     }
 
@@ -19,7 +21,8 @@ class TopicoViewMapper: Mapper<Topico, TopicoView> {
         return TopicoView(
             id = topico.id,
             titulo = update.titulo ?: topico.titulo,
-            mensagem = update.mensagem ?: topico.mensagem
+            mensagem = update.mensagem ?: topico.mensagem,
+            dataAlteracao = topico.dataAlteracao
         )
     }
 }

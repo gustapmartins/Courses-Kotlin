@@ -1,6 +1,7 @@
 package br.com.alura.restFull.model
 
 import jakarta.persistence.*
+import java.time.LocalDate
 
 @Entity
 data class Topico(
@@ -11,5 +12,6 @@ data class Topico(
     @ManyToOne
     val curso: Curso,
     @ManyToOne
-    val autor: Autor
+    val autor: Autor,
+    var dataAlteracao: LocalDate? = null
 )

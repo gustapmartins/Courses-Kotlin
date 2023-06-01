@@ -9,6 +9,7 @@ import br.com.alura.restFull.mapper.TopicoViewMapper
 import br.com.alura.restFull.model.Topico
 import br.com.alura.restFull.repository.TopicoRepository
 import org.springframework.stereotype.Service
+import java.time.LocalDate
 import java.util.stream.Collectors
 
 @Service
@@ -47,8 +48,10 @@ class TopicoService(
         val topico = repository.findById(id).orElseThrow{NotFoundException(notFoundMessage)}
         var atualizado = topico.copy(
             titulo = update.titulo ?: topico.titulo,
-            mensagem = update.mensagem ?: topico.mensagem
+            mensagem = update.mensagem ?: topico.mensagem,
+            dataAlteracao = topico.dataAlteracao
         )
+
         repository.save(atualizado)
         return TopicoViewMapper.mapUpdate(update, atualizado)
     }
