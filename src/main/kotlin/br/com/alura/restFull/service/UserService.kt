@@ -1,7 +1,7 @@
 package br.com.alura.restFull.service
 
 import br.com.alura.restFull.DTO.User.LoginDTO
-import br.com.alura.restFull.DTO.User.PasswordResetToken
+import br.com.alura.restFull.model.PasswordResetToken
 import br.com.alura.restFull.DTO.User.RegisterDTO
 import br.com.alura.restFull.DTO.User.ResetPasswordDTO
 import br.com.alura.restFull.model.Usuario

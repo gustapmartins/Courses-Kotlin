@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7bf349ff-0f08-400a-ad80-de3d7fb9a574" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/User/ForgotPasswordRequestDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/User/LoginDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/User/RegisterDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/User/ResetPasswordRequestDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/model/PasswordResetToken.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/repository/PasswordResetTokenRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/EmailService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/AutorTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/CursoTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/TopicoPorCategoriaTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/TopicoTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/TopicoViewTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/updateDTOTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/service/TopicoServiceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/Curso/CursoViewDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/Curso/CursoViewDto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/Topico/TopicoView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/DTO/Topico/TopicoView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/RestFullApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/RestFullApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/config/FilterToken.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/config/FilterToken.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/config/SecurityConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/config/SecurityConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/controller/CursoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/controller/CursoController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/controller/TipoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/controller/TopicoController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/controller/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/controller/UserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/mapper/CursoViewMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/mapper/CursoViewMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/mapper/TopicoViewMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/mapper/TopicoViewMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/model/Topico.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/model/Topico.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/model/Usuario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/model/Usuario.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/repository/TopicoRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/repository/TopicoRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/CursoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/CursoService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/TopicoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/TopicoService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/UserService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/kotlin/br/com/alura/restFull/service/UserService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/restFull/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restFull/src/test/kotlin/br/com/alura/restFull/model/UsuarioTest.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Script" />
+        <option value="JUnit5 Test Class" />
+        <option value="package-info" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/restFull" value="security" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/restFull" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/restFull/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2PFgl1EhDAMwQnJ4XPIAu7wiFtx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gusta/OneDrive/Documentos/BMG/restFull-Database&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3e443e2178949fcfd58916caca345632&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
+    ],
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;H2&quot;,
+      &quot;SQL&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="br.com.alura.restFull.config" />
+      <recent name="br.com.alura.restFull.model" />
+      <recent name="br.com.alura.restFull.DTO.Topico" />
+      <recent name="br.com.alura.restFull.DTO" />
+      <recent name="br.com.alura.restFull.controller" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.com.alura.restFull.controller" />
+      <recent name="br.com.alura.restFull.service" />
+      <recent name="br.com.alura.restFull.DTO.User" />
+      <recent name="br.com.alura.restFull.DTO.Autor" />
+      <recent name="br.com.alura.restFull.DTO.Curso" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.alura.restFull.model" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Kotlin.RestFullApplicationKt">
+    <configuration name="TopicoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restFull" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.restFull.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.alura.restFull.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.restFull.service.TopicoServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopicoServiceTest.Deve criar um novo Topico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restFull" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.restFull.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.alura.restFull.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.restFull.service.TopicoServiceTest" />
+      <option name="METHOD_NAME" value="Deve criar um novo Topico" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopicoServiceTest.Deve me retornar o topico especifico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restFull" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.restFull.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.alura.restFull.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.restFull.service.TopicoServiceTest" />
+      <option name="METHOD_NAME" value="Deve me retornar o topico especifico" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maven-wrapper.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/restFull/.mvn/wrapper/maven-wrapper.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RestFullApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.restFull.RestFullApplicationKt" />
+      <module name="restFull" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="restFull-Database" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.RestFullApplicationKt" />
+        <item itemvalue="JAR Application.maven-wrapper.jar" />
+        <item itemvalue="JUnit.TopicoServiceTest" />
+        <item itemvalue="JUnit.TopicoServiceTest.Deve criar um novo Topico" />
+        <item itemvalue="JUnit.TopicoServiceTest.Deve me retornar o topico especifico" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bf349ff-0f08-400a-ad80-de3d7fb9a574" name="Changes" comment="" />
+      <created>1683058390918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683058390918</updated>
+      <workItem from="1683058391959" duration="1061000" />
+      <workItem from="1683138167740" duration="487000" />
+      <workItem from="1683138698644" duration="6867000" />
+      <workItem from="1683204012623" duration="13742000" />
+      <workItem from="1683333371006" duration="49000" />
+      <workItem from="1683422385846" duration="8409000" />
+      <workItem from="1683550128878" duration="6552000" />
+      <workItem from="1683567001936" duration="7611000" />
+      <workItem from="1683586872885" duration="2374000" />
+      <workItem from="1683590072966" duration="302000" />
+      <workItem from="1683590414776" duration="937000" />
+      <workItem from="1683592979881" duration="927000" />
+      <workItem from="1683644250107" duration="2416000" />
+      <workItem from="1683721898689" duration="916000" />
+      <workItem from="1683905278873" duration="787000" />
+      <workItem from="1683916411171" duration="3147000" />
+      <workItem from="1683940923288" duration="844000" />
+      <workItem from="1683987289027" duration="5228000" />
+      <workItem from="1684018443485" duration="8412000" />
+      <workItem from="1684036383835" duration="4302000" />
+      <workItem from="1684102797988" duration="5000" />
+      <workItem from="1684104026528" duration="10916000" />
+      <workItem from="1684158394929" duration="275000" />
+      <workItem from="1684161170968" duration="260000" />
+      <workItem from="1684172425953" duration="26000" />
+      <workItem from="1684172510678" duration="22000" />
+      <workItem from="1684172545674" duration="4218000" />
+      <workItem from="1684176802532" duration="8525000" />
+      <workItem from="1684193535467" duration="8287000" />
+      <workItem from="1684245903919" duration="9948000" />
+      <workItem from="1684328101896" duration="8069000" />
+      <workItem from="1684346321997" duration="5998000" />
+      <workItem from="1684414285451" duration="8313000" />
+      <workItem from="1684431290816" duration="938000" />
+      <workItem from="1684436717471" duration="13339000" />
+      <workItem from="1684452575771" duration="4966000" />
+      <workItem from="1684458852732" duration="1684000" />
+      <workItem from="1684499907820" duration="22973000" />
+      <workItem from="1684609692858" duration="453000" />
+      <workItem from="1684766918962" duration="2676000" />
+      <workItem from="1684780478562" duration="6414000" />
+      <workItem from="1684861949365" duration="4348000" />
+      <workItem from="1684873327664" duration="2831000" />
+      <workItem from="1684932036742" duration="23168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="security" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/restFull_Database$RestFullApplication.ic" NAME="RestFullApplication Coverage Results" MODIFIED="1684176766224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

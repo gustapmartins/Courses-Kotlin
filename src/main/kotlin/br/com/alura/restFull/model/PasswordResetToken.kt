@@ -1,4 +1,4 @@
-package br.com.alura.restFull.DTO.User
+package br.com.alura.restFull.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

@@ -1,6 +1,6 @@
 package br.com.alura.restFull.repository
 
-import br.com.alura.restFull.DTO.User.PasswordResetToken
+import br.com.alura.restFull.model.PasswordResetToken
 import org.springframework.data.jpa.repository.JpaRepository
 import java.util.Optional
 
