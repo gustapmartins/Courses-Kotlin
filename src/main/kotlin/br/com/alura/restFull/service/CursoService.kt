@@ -2,7 +2,7 @@ package br.com.alura.restFull.service
 
 import br.com.alura.restFull.DTO.Curso.CursoDTO
 import br.com.alura.restFull.DTO.Curso.CursoUpdateDTO
-import br.com.alura.restFull.DTO.Curso.CursoView
+import br.com.alura.restFull.DTO.Curso.CursoViewDto
 import br.com.alura.restFull.exception.NotFoundException
 import br.com.alura.restFull.mapper.CursoViewMapper
 import br.com.alura.restFull.model.Curso
@@ -21,7 +21,7 @@ class CursoService(
     fun listCursos(
         nomeCurso: String?,
         paginacao: Pageable
-    ): Page<CursoView> {
+    ): Page<CursoViewDto> {
         val topicos = if (nomeCurso == null) {
             repository.findAll(paginacao)
         } else {
@@ -46,7 +46,7 @@ class CursoService(
         return create
     }
 
-    fun updateList(id: Long, update: CursoUpdateDTO): CursoView {
+    fun updateList(id: Long, update: CursoUpdateDTO): CursoViewDto {
         val curso = repository.findById(id).orElseThrow { NotFoundException(notFoundMessage) }
         var atualizado = curso.copy(
             nome = update.nome ?: curso.nome,
@@ -57,7 +57,7 @@ class CursoService(
         return CursoViewMapper.mapUpdate(update, atualizado)
     }
 
-    fun deleteId(id: Long): CursoView {
+    fun deleteId(id: Long): CursoViewDto {
         val curso = repository.findById(id).orElseThrow { NotFoundException(notFoundMessage) }
         repository.deleteById(id)
         return CursoViewMapper.map(curso)

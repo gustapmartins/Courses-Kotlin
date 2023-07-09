@@ -1,13 +1,13 @@
 package br.com.alura.restFull.model
 
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
+import jakarta.persistence.*
 
 @Entity
+@Table(name = "autor")
 data class Autor (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     val id: Long,
+    @Column(name = "nome")
     val nome: String,
 )

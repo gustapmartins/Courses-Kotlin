@@ -1,10 +1,6 @@
 package br.com.alura.restFull.model
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.Id
-import jakarta.persistence.Table
+import jakarta.persistence.*
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
@@ -12,10 +8,14 @@ import org.springframework.security.core.userdetails.UserDetails
 @Entity
 @Table(name = "usuario")
 data class Usuario (
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     val id: Long? = null,
+    @Column(name = "nome")
     val nome: String,
+    @Column(name = "email")
     val email: String,
+    @Column(name = "senha")
     var senha: String,
 ): UserDetails {
     override fun getAuthorities(): List<SimpleGrantedAuthority> {

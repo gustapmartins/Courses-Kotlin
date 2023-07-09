@@ -2,7 +2,7 @@ package br.com.alura.restFull.controller
 
 import br.com.alura.restFull.DTO.Curso.CursoDTO
 import br.com.alura.restFull.DTO.Curso.CursoUpdateDTO
-import br.com.alura.restFull.DTO.Curso.CursoView
+import br.com.alura.restFull.DTO.Curso.CursoViewDto
 import br.com.alura.restFull.model.Curso
 import br.com.alura.restFull.service.CursoService
 import org.springframework.data.domain.Page
@@ -19,7 +19,7 @@ class CursoController(private val service: CursoService) {
     fun listCursos(
         @RequestParam() nomeCurso: String?,
         @PageableDefault(size = 5, sort = ["id"], direction = Sort.Direction.DESC) paginacao: Pageable
-    ): Page<CursoView> {
+    ): Page<CursoViewDto> {
         return service.listCursos(nomeCurso, paginacao)
     }
 
@@ -34,12 +34,12 @@ class CursoController(private val service: CursoService) {
     }
 
     @PatchMapping("/{id}")
-    fun update(@PathVariable id: Long, @RequestBody update: CursoUpdateDTO): CursoView {
+    fun update(@PathVariable id: Long, @RequestBody update: CursoUpdateDTO): CursoViewDto {
         return service.updateList(id, update)
     }
 
     @DeleteMapping("/{id}")
-    fun delete(@PathVariable id: Long): CursoView {
+    fun delete(@PathVariable id: Long): CursoViewDto {
         return service.deleteId(id)
     }
 }

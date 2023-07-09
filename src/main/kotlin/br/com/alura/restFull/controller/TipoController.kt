@@ -16,7 +16,7 @@ import java.util.*
 @RequestMapping("/topicos")
 class TipoController(private val service: TopicoService) {
 
-    @GetMapping
+    @GetMapping("/findAll")
     fun listar(@RequestParam("page") page: Int, @RequestParam("pageSize") pageSize: Int): List<TopicoView> {
         return this.service.listar().drop(page).take(pageSize)
     }

@@ -13,7 +13,9 @@ class TopicoViewMapper: Mapper<Topico, TopicoView> {
             id = t.id,
             titulo = t.titulo,
             mensagem = t.mensagem,
-            dataAlteracao = t.dataAlteracao
+            dataAlteracao = t.dataAlteracao,
+            autor = t.autor,
+            curso = t.curso
         )
     }
 
@@ -22,7 +24,9 @@ class TopicoViewMapper: Mapper<Topico, TopicoView> {
             id = topico.id,
             titulo = update.titulo ?: topico.titulo,
             mensagem = update.mensagem ?: topico.mensagem,
-            dataAlteracao = topico.dataAlteracao
+            dataAlteracao = topico.dataAlteracao,
+            autor = topico.autor,
+            curso = topico.curso
         )
     }
 }

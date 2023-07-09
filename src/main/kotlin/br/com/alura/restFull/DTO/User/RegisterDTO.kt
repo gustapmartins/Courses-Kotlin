@@ -3,7 +3,7 @@ package br.com.alura.restFull.DTO.User
 import jakarta.validation.constraints.*
 
 
-class RegisterDTO(
+data class RegisterDTO(
     
     var id: Long,
     @field:NotEmpty(message = "Preencha esse campo") @Size(min = 8, max = 8, message = "O nome não pode ser menor que 8 caracteres")
