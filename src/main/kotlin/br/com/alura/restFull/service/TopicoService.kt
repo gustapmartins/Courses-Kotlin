@@ -8,7 +8,10 @@ import br.com.alura.restFull.exception.NotFoundException
 import br.com.alura.restFull.mapper.TopicoViewMapper
 import br.com.alura.restFull.model.Topico
 import br.com.alura.restFull.repository.TopicoRepository
+import org.springframework.cache.annotation.CacheEvict
+import org.springframework.cache.annotation.Cacheable
 import org.springframework.stereotype.Service
+import java.time.LocalDate
 import java.util.stream.Collectors
 
 @Service
@@ -30,7 +33,6 @@ class TopicoService(
         val topico = repository.findById(id).orElseThrow{NotFoundException(notFoundMessage)}
         return TopicoViewMapper.map(topico)
     }
-
     fun createList(create: TopicoDTO): TopicoDTO {
         val topico = Topico(
             id = create.id,
@@ -47,8 +49,12 @@ class TopicoService(
         val topico = repository.findById(id).orElseThrow{NotFoundException(notFoundMessage)}
         var atualizado = topico.copy(
             titulo = update.titulo ?: topico.titulo,
-            mensagem = update.mensagem ?: topico.mensagem
+            mensagem = update.mensagem ?: topico.mensagem,
+            autor = update.autor ?: topico.autor,
+            curso = update.curso ?: topico.curso,
+            dataAlteracao = LocalDate.now()
         )
+
         repository.save(atualizado)
         return TopicoViewMapper.mapUpdate(update, atualizado)
     }

@@ -28,7 +28,7 @@ class AutorController(
     }
 
     @PatchMapping("/{id}")
-    fun updateId(@PathVariable id: Long, update: AutorDTO): Autor {
+    fun updateId(@PathVariable id: Long, @RequestBody update: AutorDTO): Autor {
         return service.updateId(id, update)
     }
 

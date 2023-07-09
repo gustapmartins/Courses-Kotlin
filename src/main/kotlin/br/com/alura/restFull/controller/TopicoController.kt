@@ -16,7 +16,7 @@ import java.util.*
 @RequestMapping("/topicos")
 class TopicoController(private val service: TopicoService) {
 
-    @GetMapping
+    @GetMapping("/findAll")
     fun listar(@RequestParam("page") page: Int, @RequestParam("pageSize") pageSize: Int): List<TopicoView> {
         return this.service.listar().drop(page).take(pageSize)
     }
@@ -46,11 +46,5 @@ class TopicoController(private val service: TopicoService) {
     @DeleteMapping("/{id}")
     fun deleteList(@PathVariable id: Long): ResponseEntity<TopicoView> {
         return ResponseEntity.ok(service.deleteList(id))
-    }
-
-
-    @GetMapping("/relatorio")
-    fun relatorio(): List<TopicoPorCategoriaDTO> {
-        return service.relatorio()
     }
 }
