@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 package br.com.alura.restFull.service
 
-import br.com.alura.restFull.DTO.Topico.UpdateDTO
 import br.com.alura.restFull.mapper.TopicoViewMapper
 import br.com.alura.restFull.model.*
 import br.com.alura.restFull.repository.TopicoRepository
@@ -99,7 +97,6 @@ class TopicoServiceTest {
         val updatedTopico = TopicoTest.build().copy(titulo = update.titulo ?: TopicoTest.build().titulo, mensagem = update.mensagem ?: TopicoTest.build().mensagem)
 
         every { repository.findById(TopicoTest.build().id) } returns Optional.of(TopicoTest.build())
-        every { repository.save(updatedTopico) } returns updatedTopico
         every { topicoViewMapper.mapUpdate(update, updatedTopico) } returns TopicoViewTest.build()
 
         val result = topicoService.updateList(1, update)
@@ -111,7 +108,6 @@ class TopicoServiceTest {
         verify { topicoViewMapper.mapUpdate(update, updatedTopico) }
     }
 }
-=======
 //package br.com.alura.restFull.service
 //
 //import br.com.alura.restFull.mapper.TopicoViewMapper
@@ -224,4 +220,3 @@ class TopicoServiceTest {
 //        verify { topicoViewMapper.mapUpdate(update, updatedTopico) }
 //    }
 //}
->>>>>>> security
